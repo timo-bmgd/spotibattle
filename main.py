@@ -13,7 +13,7 @@ client_secret = os.getenv("CLIENT_SECRET")
 
 def get_access_token():
     # Formulate a POST request:
-    # 1. Convert our API client data into base64
+    # 1. Convert our API client data into base64 (RIGHT FORMAT!)
     auth_string = client_id + ":" + client_secret
     auth_bytes = auth_string.encode("utf-8")
     auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
@@ -49,12 +49,15 @@ def get_auth_header(token):
 def search_artist(token, artist_name):
     url = "https://api.spotify.com/v1/search"
     headers = get_auth_header(token)
-    query = f"q={artist_name}&type=artist&limit=1"
+    query = f"q={artist_name}&type=artist&limit=3"
 
     query_url = url + "?" + query
     result = get(query_url, headers=headers)
-    jsonresult = json.loads(result.content)
 
-    print(jsonresult)
+    # THE json-result CONTAINS A LIST OF ALL MATCHES. (LIST OF LISTS)
+    json_result = json.loads(result.content)["artists"]["items"]
+    # followers = jsonresult['items']
+    return json_result[0];
 
-search_artist(get_access_token(),"Eminem")
+
+print(search_artist(get_access_token(), "ACDC"))
