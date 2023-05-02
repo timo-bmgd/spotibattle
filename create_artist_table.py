@@ -1,5 +1,9 @@
 import json
 
-with open('artist_list.json') as fp:
+with open('artist_list.json', "r") as fp:
     data = json.load(fp)
-    print(data[2])
+
+data["Eminem"] = 2
+
+with open("artist_list.json", "w") as jsonFile:
+    json.dump(data, jsonFile)

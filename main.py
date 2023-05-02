@@ -1,6 +1,7 @@
 import json
 import os
 import base64
+import game
 
 from dotenv import load_dotenv
 from requests import post, get
