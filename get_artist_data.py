@@ -20,9 +20,8 @@ def save_data_to_json(data, file_path):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
 
-if __name__ == "__main__":
+def update():
     data = load_data_from_json('artist_data.json')
     artists = extract_artists(data)
     save_data_to_json(artists, 'artists_cleaned.json')
 
-print()

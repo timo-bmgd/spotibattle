@@ -72,7 +72,3 @@ def run():
     game.start_game()
 
 
-
-
-
-
