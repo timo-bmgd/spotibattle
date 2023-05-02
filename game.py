@@ -3,18 +3,20 @@ import random
 
 
 def get_random_artists():
-    with open('artist_list.json', "r") as fp:
+    with open('artists_cleaned.json', "r") as fp:
         data = json.load(fp)
 
-        artist1_data = tuple(random.choice(list(data.items())))
-        artist2_data = tuple(random.choice(list(data.items())))
-        while artist1_data == artist2_data:
-            # Avoid duplicate selections:
-            artist2_data = tuple(random.choice(list(data.items())))
+        artist1_data = random.choice(data)
+        #artist2_data = random.choice(data)
 
-        artist1 = Artist(artist1_data[0], artist1_data[1], artist1_data[2])
-        artist2 = Artist(artist2_data[0], artist2_data[1], artist2_data[2])
-        return artist1, artist2
+        #while artist1_data == artist2_data:
+            # Avoid duplicate selections:
+            #artist2_data = random.choice(data)
+
+        print(f"p{artist1_data}")
+        artist1 = Artist(artist1_data["name"], artist1_data["followers"], artist1_data["popularity"])
+        #artist2 = Artist(artist2_data[0], artist2_data[1], artist2_data[2])
+        return artist1#, artist2
 
 
 
@@ -61,5 +63,4 @@ class Game:
         print(f"2: {self.a2[0]} has {self.a2[1]} followers.")
 
 
-game = Game()
-game.start_game()
+get_random_artists()
