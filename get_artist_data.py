@@ -1,18 +1,28 @@
 import json
 
-def get_artist_follower_count(name):
-    with open("artist_data.json", "r") as infile:
-        artists_data = json.load(infile)
+def load_data_from_json(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data
 
-    for artist_data in artists_data:
-        if name in artist_data:
-            return artist_data[name]['followers']['total']
+def extract_artists(data):
+    artists = []
+    for artist_data in data:
+        artist = {
+            'name': artist_data['name'],
+            'popularity': artist_data['popularity'],
+            'followers': artist_data['followers']['total']
+        }
+        artists.append(artist)
+    return artists
 
-    return None
+def save_data_to_json(data, file_path):
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=4)
 
-name = "Selena Gomez"
-followers = get_artist_follower_count(name)
-if followers is not None:
-    print(f"{'name'} has {'followers'} followers.")
-else:
-    print(f"Artist '{name}' not found in the artist_data.json file.")
+if __name__ == "__main__":
+    data = load_data_from_json('artist_data.json')
+    artists = extract_artists(data)
+    save_data_to_json(artists, 'artists_cleaned.json')
+
+print()

@@ -2,6 +2,7 @@ import json
 import os
 import base64
 
+
 from dotenv import load_dotenv
 from requests import post, get
 
@@ -58,8 +59,10 @@ def search_artist(token, artist_name):
 
     # THE json-result CONTAINS A LIST OF ALL MATCHES. (LIST OF LISTS)
     json_result = json.loads(result.content)["artists"]["items"]
-    # followers = jsonresult['items']
+    #followers = json_result['items']
     return json_result[0];
+
+
 
 def get_top_artists(token):
     url = "https://api.spotify.com/v1/browse/categories/toplists/playlists"
@@ -96,12 +99,14 @@ def get_artists_from_playlist(token, playlist_id):
     result = get(url, headers=headers, params=params)
     json_result = json.loads(result.content)
 
-    artists = []
+    artists_playlist = []
     for item in json_result['items']:
         for artist in item['track']['artists']:
-            artists.append(artist['name'])
+            artists_playlist.append(artist['name'])
 
-    return artists
+    return artists_playlist
+
+
 
 
 
@@ -109,8 +114,12 @@ def save_top_artists_to_json_file(top_artists):
     with open("top_100_artists.json", "w") as file:
         json.dump(top_artists, file)
 
-def save_top_artistsplaylist_to_json_file(artists):
-    with open("top_100_artistsPlaylist.json", "w") as file:
+##def save_top_artistsplaylist_to_json_file(artists):
+  ##  with open("top_100_artistsPlaylist.json", "w") as file:
+       ## json.dump(artists, file)
+
+def save_selected_artists_to_json_file(artists):
+    with open("selected_Artists.json", "w") as file:
         json.dump(artists, file)
 
 
@@ -119,9 +128,45 @@ get_top_artists(access_token)
 top_artists = get_top_artists(access_token)
 #save_top_artists_to_json_file(top_artists)
 
+##save_top_artistsplaylist_to_json_file(get_artists_from_playlist(access_token, "5sVP9rWCHwxCvAuIS1xLAM"))
 
 
 
-print(search_artist(get_access_token(), "ACDC"))
-print(top_artists)
-print(get_artists_from_playlist(access_token, "5sVP9rWCHwxCvAuIS1xLAM"))
+
+#print(search_artist(get_access_token(), "ACDC"))
+#print(top_artists)
+#print(get_artists_from_playlist(access_token, "5sVP9rWCHwxCvAuIS1xLAM"))
+
+# Collecting the artist Data (TOP ARTISTS)
+artists_data=[]
+for i in range(10):
+    artistx = top_artists[i]
+    artists_data.append(search_artist(get_access_token(), artistx))
+
+# Saving artist data to a JSON file
+with open("artist_data.json", "w") as outfile:
+    json.dump(artists_data, outfile, indent=4)
+
+#######################################
+
+#Collecting the artist Data (PLAYLIST)
+
+artists_data_playlist=[]
+artists_from_playlist = get_artists_from_playlist(access_token, "5sVP9rWCHwxCvAuIS1xLAM")
+
+for i in range(5):
+
+    artisty = artists_from_playlist[i]
+    print(artists_from_playlist[i])
+
+    artists_data_playlist.append(search_artist(get_access_token(), artisty))
+    print(search_artist(get_access_token(), artisty))
+
+# Saving artist data to a JSON file
+with open("top_100_artistsPlaylist.json", "w") as outfile:
+    json.dump(artists_data_playlist, outfile, indent=4)
+
+#print(search_artist(get_access_token(), artistx))
+#print(type(search_artist(get_access_token(), artistx)))
+
+
