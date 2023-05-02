@@ -42,6 +42,8 @@ def get_access_token():
     return access_token
 
 
+
+
 def get_auth_header(token):
     return {"Authorization": "Bearer " + token}
 
@@ -59,5 +61,67 @@ def search_artist(token, artist_name):
     # followers = jsonresult['items']
     return json_result[0];
 
+def get_top_artists(token):
+    url = "https://api.spotify.com/v1/browse/categories/toplists/playlists"
+    headers = get_auth_header(token)
+    limit = 50  # Spotify API allows a maximum limit of 50 per request
+
+    top_artists = []
+
+    for offset in range(0, 50, limit):
+        params = {
+            "country": "US",
+            "limit": limit,
+            "offset": offset,
+        }
+        result = get(url, headers=headers, params=params)
+        json_result = json.loads(result.content)
+
+        for item in json_result['playlists']['items']:
+            playlist_id = item['id']
+            artists_from_playlist = get_artists_from_playlist(token, playlist_id)
+            top_artists.extend(artists_from_playlist)
+
+    return top_artists[:50]  # Return only the top 50 Artists
+
+
+def get_artists_from_playlist(token, playlist_id):
+    url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+    headers = get_auth_header(token)
+    limit = 50
+
+    params = {
+        "limit": limit,
+    }
+    result = get(url, headers=headers, params=params)
+    json_result = json.loads(result.content)
+
+    artists = []
+    for item in json_result['items']:
+        for artist in item['track']['artists']:
+            artists.append(artist['name'])
+
+    return artists
+
+
+
+def save_top_artists_to_json_file(top_artists):
+    with open("top_100_artists.json", "w") as file:
+        json.dump(top_artists, file)
+
+def save_top_artistsplaylist_to_json_file(artists):
+    with open("top_100_artistsPlaylist.json", "w") as file:
+        json.dump(artists, file)
+
+
+access_token = get_access_token()
+get_top_artists(access_token)
+top_artists = get_top_artists(access_token)
+#save_top_artists_to_json_file(top_artists)
+
+
+
 
 print(search_artist(get_access_token(), "ACDC"))
+print(top_artists)
+print(get_artists_from_playlist(access_token, "5sVP9rWCHwxCvAuIS1xLAM"))
