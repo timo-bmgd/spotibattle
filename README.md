@@ -7,7 +7,7 @@ SpotiBattle is a fun and engaging command-line game built in Python 🐍. It qui
 ## Getting Started 🚀
 
 1. Clone this repository 📂
-2. Install the required Python packages using `pip install -r requirements.txt` 📦
+2. Install the required Python packages using `pip install python-dotenv` 📦
 3. Run the game using `python main.py game` 🎮
 4. To update the artist data, run `python main.py update` 🔄
 
