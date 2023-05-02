@@ -25,4 +25,3 @@ if __name__ == "__main__":
     artists = extract_artists(data)
     save_data_to_json(artists, 'artists_cleaned.json')
 
-print()
