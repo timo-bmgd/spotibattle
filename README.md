@@ -2,7 +2,10 @@
 
 SpotiBattle is a fun and engaging command-line game built in Python 🐍. It quizzes the player about the popularity and number of followers of different artists on Spotify 🌟. The game fetches artist data using the Spotify API and updates the game data with the most recent information 📈.
 
-<img src="https://user-images.githubusercontent.com/78025568/235758741-7bce3c08-822e-4339-a315-1404572a0b56.png" alt="SPOTIBATTLE" width="300" height="300">
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/78025568/235758741-7bce3c08-822e-4339-a315-1404572a0b56.png" alt="SPOTIBATTLE" width="300" height="300">
+</div>
+
 
 
 ## Getting Started 🚀
