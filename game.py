@@ -1,6 +1,7 @@
 import json
 import random
-
+from datetime import datetime
+random.seed(datetime.now().timestamp())
 
 def get_random_artists():
     with open('artists_cleaned.json', "r") as fp:
