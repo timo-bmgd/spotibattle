@@ -1,52 +1,52 @@
 [
     {
+        "name": "Ed Sheeran",
+        "popularity": 91,
+        "followers": 111754254
+    },
+    {
         "name": "Rema",
         "popularity": 82,
-        "followers": 2258865
+        "followers": 2298187
     },
     {
         "name": "Selena Gomez",
-        "popularity": 86,
-        "followers": 41928782
-    },
-    {
-        "name": "The Weeknd",
-        "popularity": 97,
-        "followers": 63926550
-    },
-    {
-        "name": "Future",
-        "popularity": 91,
-        "followers": 13748650
-    },
-    {
-        "name": "SZA",
-        "popularity": 92,
-        "followers": 12248123
+        "popularity": 85,
+        "followers": 42077793
     },
     {
         "name": "Miley Cyrus",
-        "popularity": 90,
-        "followers": 20548132
+        "popularity": 89,
+        "followers": 20620982
+    },
+    {
+        "name": "SZA",
+        "popularity": 91,
+        "followers": 12367574
     },
     {
         "name": "Post Malone",
         "popularity": 89,
-        "followers": 40446533
+        "followers": 40511757
     },
     {
-        "name": "PinkPantheress",
-        "popularity": 82,
-        "followers": 2016931
-    },
-    {
-        "name": "Ice Spice",
-        "popularity": 83,
-        "followers": 1156589
+        "name": "David Kushner",
+        "popularity": 79,
+        "followers": 835012
     },
     {
         "name": "Coi Leray",
         "popularity": 79,
-        "followers": 557157
+        "followers": 555886
+    },
+    {
+        "name": "The Weeknd",
+        "popularity": 97,
+        "followers": 64292100
+    },
+    {
+        "name": "Ariana Grande",
+        "popularity": 90,
+        "followers": 90131779
     }
 ]

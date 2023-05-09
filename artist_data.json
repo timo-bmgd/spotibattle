@@ -1,11 +1,47 @@
 [
     {
         "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"
+        },
+        "followers": {
+            "href": null,
+            "total": 111754254
+        },
+        "genres": [
+            "pop",
+            "uk pop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/6eUKZXaKkcviH0Ku9w2n3V",
+        "id": "6eUKZXaKkcviH0Ku9w2n3V",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab6761610000e5eb9e690225ad4445530612ccc9",
+                "width": 640
+            },
+            {
+                "height": 320,
+                "url": "https://i.scdn.co/image/ab676161000051749e690225ad4445530612ccc9",
+                "width": 320
+            },
+            {
+                "height": 160,
+                "url": "https://i.scdn.co/image/ab6761610000f1789e690225ad4445530612ccc9",
+                "width": 160
+            }
+        ],
+        "name": "Ed Sheeran",
+        "popularity": 91,
+        "type": "artist",
+        "uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+    },
+    {
+        "external_urls": {
             "spotify": "https://open.spotify.com/artist/46pWGuE3dSwY3bMMXGBvVS"
         },
         "followers": {
             "href": null,
-            "total": 2258865
+            "total": 2298187
         },
         "genres": [
             "afrobeats",
@@ -41,7 +77,7 @@
         },
         "followers": {
             "href": null,
-            "total": 41928782
+            "total": 42077793
         },
         "genres": [
             "pop",
@@ -67,85 +103,44 @@
             }
         ],
         "name": "Selena Gomez",
-        "popularity": 86,
+        "popularity": 85,
         "type": "artist",
         "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
     },
     {
         "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+            "spotify": "https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6"
         },
         "followers": {
             "href": null,
-            "total": 63926550
+            "total": 20620982
         },
         "genres": [
-            "canadian contemporary r&b",
-            "canadian pop",
             "pop"
         ],
-        "href": "https://api.spotify.com/v1/artists/1Xyo4u8uXC1ZmMpatF05PJ",
-        "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+        "href": "https://api.spotify.com/v1/artists/5YGY8feqx7naU7z4HrwZM6",
+        "id": "5YGY8feqx7naU7z4HrwZM6",
         "images": [
             {
                 "height": 640,
-                "url": "https://i.scdn.co/image/ab6761610000e5eb01b9b4ec2a05d0805428acfa",
+                "url": "https://i.scdn.co/image/ab6761610000e5eb7e8110a92ec2252f0821f8b8",
                 "width": 640
             },
             {
                 "height": 320,
-                "url": "https://i.scdn.co/image/ab6761610000517401b9b4ec2a05d0805428acfa",
+                "url": "https://i.scdn.co/image/ab676161000051747e8110a92ec2252f0821f8b8",
                 "width": 320
             },
             {
                 "height": 160,
-                "url": "https://i.scdn.co/image/ab6761610000f17801b9b4ec2a05d0805428acfa",
+                "url": "https://i.scdn.co/image/ab6761610000f1787e8110a92ec2252f0821f8b8",
                 "width": 160
             }
         ],
-        "name": "The Weeknd",
-        "popularity": 97,
+        "name": "Miley Cyrus",
+        "popularity": 89,
         "type": "artist",
-        "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
-    },
-    {
-        "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
-        },
-        "followers": {
-            "href": null,
-            "total": 13748650
-        },
-        "genres": [
-            "atl hip hop",
-            "hip hop",
-            "rap",
-            "southern hip hop",
-            "trap"
-        ],
-        "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
-        "id": "1RyvyyTE3xzB2ZywiAwp0i",
-        "images": [
-            {
-                "height": 640,
-                "url": "https://i.scdn.co/image/ab6761610000e5eb24e41f491b129093a6fee383",
-                "width": 640
-            },
-            {
-                "height": 320,
-                "url": "https://i.scdn.co/image/ab6761610000517424e41f491b129093a6fee383",
-                "width": 320
-            },
-            {
-                "height": 160,
-                "url": "https://i.scdn.co/image/ab6761610000f17824e41f491b129093a6fee383",
-                "width": 160
-            }
-        ],
-        "name": "Future",
-        "popularity": 91,
-        "type": "artist",
-        "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+        "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
     },
     {
         "external_urls": {
@@ -153,7 +148,7 @@
         },
         "followers": {
             "href": null,
-            "total": 12248123
+            "total": 12367574
         },
         "genres": [
             "pop",
@@ -180,44 +175,9 @@
             }
         ],
         "name": "SZA",
-        "popularity": 92,
+        "popularity": 91,
         "type": "artist",
         "uri": "spotify:artist:7tYKF4w9nC0nq9CsPZTHyP"
-    },
-    {
-        "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6"
-        },
-        "followers": {
-            "href": null,
-            "total": 20548132
-        },
-        "genres": [
-            "pop"
-        ],
-        "href": "https://api.spotify.com/v1/artists/5YGY8feqx7naU7z4HrwZM6",
-        "id": "5YGY8feqx7naU7z4HrwZM6",
-        "images": [
-            {
-                "height": 640,
-                "url": "https://i.scdn.co/image/ab6761610000e5eb7e8110a92ec2252f0821f8b8",
-                "width": 640
-            },
-            {
-                "height": 320,
-                "url": "https://i.scdn.co/image/ab676161000051747e8110a92ec2252f0821f8b8",
-                "width": 320
-            },
-            {
-                "height": 160,
-                "url": "https://i.scdn.co/image/ab6761610000f1787e8110a92ec2252f0821f8b8",
-                "width": 160
-            }
-        ],
-        "name": "Miley Cyrus",
-        "popularity": 90,
-        "type": "artist",
-        "uri": "spotify:artist:5YGY8feqx7naU7z4HrwZM6"
     },
     {
         "external_urls": {
@@ -225,7 +185,7 @@
         },
         "followers": {
             "href": null,
-            "total": 40446533
+            "total": 40511757
         },
         "genres": [
             "dfw rap",
@@ -259,71 +219,38 @@
     },
     {
         "external_urls": {
-            "spotify": "https://open.spotify.com/artist/78rUTD7y6Cy67W1RVzYs7t"
+            "spotify": "https://open.spotify.com/artist/33NVpKoXjItPwUJTMZIOiY"
         },
         "followers": {
             "href": null,
-            "total": 2016931
-        },
-        "genres": [],
-        "href": "https://api.spotify.com/v1/artists/78rUTD7y6Cy67W1RVzYs7t",
-        "id": "78rUTD7y6Cy67W1RVzYs7t",
-        "images": [
-            {
-                "height": 640,
-                "url": "https://i.scdn.co/image/ab6761610000e5ebfd7a593cda27e19c8768edea",
-                "width": 640
-            },
-            {
-                "height": 320,
-                "url": "https://i.scdn.co/image/ab67616100005174fd7a593cda27e19c8768edea",
-                "width": 320
-            },
-            {
-                "height": 160,
-                "url": "https://i.scdn.co/image/ab6761610000f178fd7a593cda27e19c8768edea",
-                "width": 160
-            }
-        ],
-        "name": "PinkPantheress",
-        "popularity": 82,
-        "type": "artist",
-        "uri": "spotify:artist:78rUTD7y6Cy67W1RVzYs7t"
-    },
-    {
-        "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3LZZPxNDGDFVSIPqf4JuEf"
-        },
-        "followers": {
-            "href": null,
-            "total": 1156589
+            "total": 835012
         },
         "genres": [
-            "bronx drill"
+            "gen z singer-songwriter"
         ],
-        "href": "https://api.spotify.com/v1/artists/3LZZPxNDGDFVSIPqf4JuEf",
-        "id": "3LZZPxNDGDFVSIPqf4JuEf",
+        "href": "https://api.spotify.com/v1/artists/33NVpKoXjItPwUJTMZIOiY",
+        "id": "33NVpKoXjItPwUJTMZIOiY",
         "images": [
             {
                 "height": 640,
-                "url": "https://i.scdn.co/image/ab6761610000e5eb03578c92e15089c645b794f5",
+                "url": "https://i.scdn.co/image/ab6761610000e5ebf6a68d90ef0bb84219e3499a",
                 "width": 640
             },
             {
                 "height": 320,
-                "url": "https://i.scdn.co/image/ab6761610000517403578c92e15089c645b794f5",
+                "url": "https://i.scdn.co/image/ab67616100005174f6a68d90ef0bb84219e3499a",
                 "width": 320
             },
             {
                 "height": 160,
-                "url": "https://i.scdn.co/image/ab6761610000f17803578c92e15089c645b794f5",
+                "url": "https://i.scdn.co/image/ab6761610000f178f6a68d90ef0bb84219e3499a",
                 "width": 160
             }
         ],
-        "name": "Ice Spice",
-        "popularity": 83,
+        "name": "David Kushner",
+        "popularity": 79,
         "type": "artist",
-        "uri": "spotify:artist:3LZZPxNDGDFVSIPqf4JuEf"
+        "uri": "spotify:artist:33NVpKoXjItPwUJTMZIOiY"
     },
     {
         "external_urls": {
@@ -331,7 +258,7 @@
         },
         "followers": {
             "href": null,
-            "total": 557157
+            "total": 555886
         },
         "genres": [
             "new jersey underground rap",
@@ -360,5 +287,77 @@
         "popularity": 79,
         "type": "artist",
         "uri": "spotify:artist:6AMd49uBDJfhf30Ak2QR5s"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+        },
+        "followers": {
+            "href": null,
+            "total": 64292100
+        },
+        "genres": [
+            "canadian contemporary r&b",
+            "canadian pop",
+            "pop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/1Xyo4u8uXC1ZmMpatF05PJ",
+        "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab6761610000e5eb01b9b4ec2a05d0805428acfa",
+                "width": 640
+            },
+            {
+                "height": 320,
+                "url": "https://i.scdn.co/image/ab6761610000517401b9b4ec2a05d0805428acfa",
+                "width": 320
+            },
+            {
+                "height": 160,
+                "url": "https://i.scdn.co/image/ab6761610000f17801b9b4ec2a05d0805428acfa",
+                "width": 160
+            }
+        ],
+        "name": "The Weeknd",
+        "popularity": 97,
+        "type": "artist",
+        "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR"
+        },
+        "followers": {
+            "href": null,
+            "total": 90131779
+        },
+        "genres": [
+            "pop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/66CXWjxzNUsdJxJ2JdwvnR",
+        "id": "66CXWjxzNUsdJxJ2JdwvnR",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab6761610000e5ebcdce7620dc940db079bf4952",
+                "width": 640
+            },
+            {
+                "height": 320,
+                "url": "https://i.scdn.co/image/ab67616100005174cdce7620dc940db079bf4952",
+                "width": 320
+            },
+            {
+                "height": 160,
+                "url": "https://i.scdn.co/image/ab6761610000f178cdce7620dc940db079bf4952",
+                "width": 160
+            }
+        ],
+        "name": "Ariana Grande",
+        "popularity": 90,
+        "type": "artist",
+        "uri": "spotify:artist:66CXWjxzNUsdJxJ2JdwvnR"
     }
 ]

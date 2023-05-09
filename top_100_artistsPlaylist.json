@@ -5,7 +5,7 @@
         },
         "followers": {
             "href": null,
-            "total": 1920346
+            "total": 1924845
         },
         "genres": [
             "dance rock",
@@ -47,7 +47,7 @@
         },
         "followers": {
             "href": null,
-            "total": 81844
+            "total": 81965
         },
         "genres": [
             "minimal techno"
@@ -82,7 +82,7 @@
         },
         "followers": {
             "href": null,
-            "total": 228306
+            "total": 229031
         },
         "genres": [
             "deep euro house",
@@ -109,7 +109,7 @@
             }
         ],
         "name": "NTO",
-        "popularity": 59,
+        "popularity": 58,
         "type": "artist",
         "uri": "spotify:artist:7ry8L53T4oJtSIogGYuioq"
     },
@@ -119,7 +119,7 @@
         },
         "followers": {
             "href": null,
-            "total": 105297
+            "total": 105477
         },
         "genres": [
             "deep euro house",
@@ -156,7 +156,7 @@
         },
         "followers": {
             "href": null,
-            "total": 1972
+            "total": 1992
         },
         "genres": [],
         "href": "https://api.spotify.com/v1/artists/6G2dxtT1uVQuzErBZsw7Ur",
